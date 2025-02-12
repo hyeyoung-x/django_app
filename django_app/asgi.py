@@ -12,12 +12,12 @@ import os
 from blacknoise import BlackNoise
 from django.conf import settings
 from django.core.asgi import get_asgi_application
-from whitenoise import WhiteNoise
+
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_app.settings')
 
 application = get_asgi_application()
 
-# whitenoise 설정
+# blacknoise 설정
 application = BlackNoise(get_asgi_application())
 application.add(settings.BASE_DIR / "static", "static")
