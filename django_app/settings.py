@@ -46,8 +46,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # whitenoise 설정
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 
